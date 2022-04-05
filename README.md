@@ -21,7 +21,7 @@
       3.2 anyproxy 想要拦截移动端数据，就必须在移动端下载证书并安装，再修改手机里的wifi的代理配置。如果是使用vmos一类的虚拟机，那么证书和wifi的代理配置都再vmos里面设置就OK了。
  4. ，进行如上安装后，我们可以在PC 上访问anyproxy的页面，如果能访问，并且能看见数据，就说明操作成功了一大半了。剩下的就是编写脚本，修改响应的数据。
  5. 代码部分
-				module.exports = {
+	```			module.exports = {
 				  *beforeSendResponse(requestDetail, responseDetail) {
 					  //getlist
 					if (requestDetail.url === 'https://student.wozaixiaoyuan.com/leave2/getList.json') {
